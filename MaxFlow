@@ -75,13 +75,15 @@ struct MaxFlow
         s = s_;
         t = t_;
         vtot = vtot_;
+        etot = 0;
         for(int i = 1 ; i <= vtot ; i++ )
         {
             head[i] = -1;
         }
     } 
 };
-MaxFlow<ll> c;
+
+MaxFlow<ll> g;
 
 int main() {
     ios_base::sync_with_stdio(false);
